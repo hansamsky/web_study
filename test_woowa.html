@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>우아한디바이스</title>
+  </head>
+  <style>
+  @font-face {
+    src: url('/BMHANNA_11yrs_otf.otf');
+    font-family: BMHANNA11yrs;
+  }
+
+  @media (min-width:800px) {
+    div{
+      display: none;
+    }
+  }
+
+  #grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 1fr;
+    border-bottom:10px solid gray
+  }
+  body{
+    margin: 0px;
+    font-family: BMHANNA11yrs;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  header{
+    overflow: hidden;
+  }
+
+  h1{
+    margin: 20px 0 0 40px;
+    font-size: 32px;
+    float: left;
+  }
+
+  nav{
+    float: right;
+    margin: 20px 40px 0 0;
+  }
+
+  nav ul li{
+    float: left;
+    list-style: none;
+    margin:  0 20px;
+    font-size: 20px;
+  }
+
+  .serch {
+    width: 256px;
+    height: 36px;
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    margin-top: 40px;
+    margin-left: 1400px;
+  }
+  .Rectangle2{
+      /* border:30px solid gray; */
+      border-bottom-width: 20px;
+      margin-top: 10px;
+      /* display:grid;
+      grid-template-columns: 150px; */
+      width: 250px;
+      height: 260px;
+      background-color: #d8d8d8;
+
+      }
+    #Rectangle{
+      display:grid;
+      grid-template-columns: 350px 350px 350px 350px;
+      padding-left: 100px;
+    }
+
+
+  </style>
+  <body>
+    <header>
+      <h1><a href="#">우아한 디바이스</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">전체 디바이스</a></li>
+          <li><a href="#">MY 내역</a></li>
+          <li><a href="#">게시판</a></li>
+        </ul>
+      </nav>
+        <input class="serch" type="text" placeholder="검색어 입력">
+        <ul id="Rectangle">
+            <li class="Rectangle2"><a href="#">리스트 노출1</a></li>
+            <li class="Rectangle2"><a href="#">리스트노출2</a></li>
+            <li class="Rectangle2"><a href="#">리스트 노출3</a></li>
+            <li class="Rectangle2"><a href="#">리스트 노출4</a></li>
+            <li class="Rectangle2"><a href="#">리스트 노출5</a></li>
+            <li class="Rectangle2"><a href="#">리스트 노출6</a></li>
+            <li class="Rectangle2"><a href="#">리스트 노출7</a></li>
+            <li class="Rectangle2"><a href="#">리스트 노출8</a></li>
+        </ul>
+    </section>
+    </header>
+  </body>
+</html>
