@@ -1,107 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>우아한디바이스</title>
-  </head>
-  <style>
-  @font-face {
-    src: url('/BMHANNA_11yrs_otf.otf');
-    font-family: BMHANNA11yrs;
-  }
 
-  @media (min-width:800px) {
-    div{
-      display: none;
-    }
-  }
+<head>
+  <meta charset="utf-8">
+  <title>우아한디바이스</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Woowa_style.css">
+  <script language="javascript">
+  function showPopup() { window.open('show_rental.html','width=300, height=400, scrollbars= 0, toolbar=0, menubar=no'); }
 
-  #grid{
-    display: grid;
-    grid-template-columns: 3fr 2fr 2fr 1fr;
-    border-bottom:10px solid gray
-  }
-  body{
-    margin: 0px;
-    font-family: BMHANNA11yrs;
-  }
+  </script>
+</head>
 
-  a {
-    color: black;
-    text-decoration: none;
-  }
+<body>
+  <header>
+    <h1><a href="#">우아한 디바이스</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">전체 디바이스</a></li>
+        <li><a href="./Woowa_mylink.html">MY 내역</a></li>
+        <li><a href="#">게시판</a></li>
+        <li><a id="oval" href="#">프로필</a></li>
+        <li><a href="#"><img src="./sign-out-option.png" alt="" class="signout"></a></li>
+      </ul>
+    </nav>
+    <input class="serch" type="text" placeholder="검색어 입력">
+    <i class="fas fa-search"></i>
+  </header>
 
-  header{
-    overflow: hidden;
-  }
+  <section>
+    <ul id="Rectangle">
+      <li class="device-list">
+        <!-- <a href="#"> -->
+         <a href = "#" onclick="showPopup();" />
+          <div class="card-img">
+            <img src="https://store.storeimages.cdn-apple.com/8750/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/x/iphone-x-gallery1-2017?wid=1670&hei=1282&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1506704361965" alt="" />
+            <div class="card-info">
+              <span class="device-name">iphone X</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="http://www.bloter.net/wp-content/uploads/2018/02/Galaxy-S9_Lilac-Purple.jpg" alt="" />
+            <div class="card-info">
+              <span class="device-name">Galaxy 9</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone8/plus/iphone8-plus-gold-select-2017?wid=513&hei=556&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1504041014365" alt="" />
+            <div class="card-info">
+              <span class="device-name">iphone 8 Plus</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="https://s7d2.scene7.com/is/image/SamsungUS/Note8-Front-S-Pen-Orchidgray" alt="" />
+            <div class="card-info">
+              <span class="device-name">Galaxy note8</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/51BfAace6KL._SL500_AC_SS350_.jpg" alt="" />
+            <div class="card-info">
+              <span class="device-name">Pixel Xl</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge_wm_brw/public/article_images/2017/02/lg-g6-titanium-3.jpg?itok=zMixMRqk" alt="" />
+            <div class="card-info">
+              <span class="device-name">LG G7</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="http://ipadinsight.com/wp-content/uploads/2018/03/img_0731.jpg" alt="" />
+            <div class="card-info">
+              <span class="device-name">iphone se</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="device-list">
+        <a href="#">
+          <div class="card-img">
+            <img src="https://cdn.alzashop.com/ImgW.ashx?fd=f3&cd=LGE2151c" alt="" />
+            <div class="card-info">
+              <span class="device-name">LG V30</span>
+              <span class="device-status">대여가능</span>
+              <i class="borrowable"></i>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <div class="popup">
+    <div class="popup-header">
 
-  h1{
-    margin: 20px 0 0 40px;
-    font-size: 32px;
-    float: left;
-  }
+    </div>
+    <div class="popup-body">
 
-  nav{
-    float: right;
-    margin: 20px 40px 0 0;
-  }
-
-  nav ul li{
-    float: left;
-    list-style: none;
-    margin:  0 20px;
-    font-size: 20px;
-  }
-
-  .serch {
-    width: 256px;
-    height: 36px;
-    background-color: #ffffff;
-    border: solid 1px #cccccc;
-    margin-top: 40px;
-    margin-left: 1400px;
-  }
-  .Rectangle2{
-      /* border:30px solid gray; */
-      border-bottom-width: 20px;
-      margin-top: 10px;
-      /* display:grid;
-      grid-template-columns: 150px; */
-      width: 250px;
-      height: 260px;
-      background-color: #d8d8d8;
-
-      }
-    #Rectangle{
-      display:grid;
-      grid-template-columns: 350px 350px 350px 350px;
-      padding-left: 100px;
-    }
-
-
-  </style>
-  <body>
-    <header>
-      <h1><a href="#">우아한 디바이스</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#">전체 디바이스</a></li>
-          <li><a href="#">MY 내역</a></li>
-          <li><a href="#">게시판</a></li>
-        </ul>
-      </nav>
-        <input class="serch" type="text" placeholder="검색어 입력">
-        <ul id="Rectangle">
-            <li class="Rectangle2"><a href="#">리스트 노출1</a></li>
-            <li class="Rectangle2"><a href="#">리스트노출2</a></li>
-            <li class="Rectangle2"><a href="#">리스트 노출3</a></li>
-            <li class="Rectangle2"><a href="#">리스트 노출4</a></li>
-            <li class="Rectangle2"><a href="#">리스트 노출5</a></li>
-            <li class="Rectangle2"><a href="#">리스트 노출6</a></li>
-            <li class="Rectangle2"><a href="#">리스트 노출7</a></li>
-            <li class="Rectangle2"><a href="#">리스트 노출8</a></li>
-        </ul>
-    </section>
-    </header>
-  </body>
+    </div>
+  </div>
+</body>
 </html>

@@ -1,19 +1,9 @@
+
 @font-face {
   src: url('/BMHANNA_11yrs_otf.otf');
   font-family: BMHANNA11yrs;
 }
 
-@media (min-width:800px) {
-  div{
-    display: none;
-  }
-}
-
-#grid{
-  display: grid;
-  grid-template-columns: 3fr 2fr 2fr 1fr;
-  border-bottom:10px solid gray
-}
 body{
   margin: 0px;
   font-family: BMHANNA11yrs;
@@ -51,4 +41,88 @@ nav ul li{
   height: 36px;
   background-color: #ffffff;
   border: solid 1px #cccccc;
+  margin-top: 40px;
+  margin-left: 1400px;
 }
+
+.signout{
+  width: 32px;
+}
+
+.info{
+  width: 100px;
+  height:110px;
+  background-color: #f4f4f4;
+}
+
+.device-list{
+    /* border:30px solid gray; */
+    border-bottom-width: 20px;
+    margin-top: 10px;
+    /* display:grid;
+    grid-template-columns: 150px; */
+    width: 250px;
+    height: 260px;
+    background-color: #d8d8d8;
+    }
+
+.device-list .card-img{
+  width: 100%;
+  /* width: 250px;
+  height: 210px; */
+}
+
+
+.card-img img{
+  /* width: 50%; %로 처리하면 card-info 영역이 다 달라지는거같은데. 왜그런것인지.  */
+  width: 250px;
+  height: 200px;
+}
+
+.card-info{
+  border-top: 1px solid #000;
+  margin-top: -5px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.device-name{
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.borrowable{
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #8eb91a;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.device-status, .borrowable{
+  float: right;
+}
+
+  #Rectangle{
+    width: 1280px;
+    display:grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style-type: none;
+    list-style-image: none;
+  }
+
+  #oval{
+    background-color: #d8d8d8;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: center;
+    text-align: center;
+  }
